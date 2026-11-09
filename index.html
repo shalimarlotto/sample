@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Shalimar Lotto - Live Lottery &amp; Satta Results Today</title>
+<meta name="description" content="Shalimar Lotto live results - Lottery every 15 minutes from 9 AM to 9 PM IST and Satta daily at 4 PM IST. Check today's results, previous results and charts.">
+<meta name="keywords" content="Shalimar Lotto, Shalimar Lotto result, lottery result, satta result, Shalimar lottery, live lottery result, Shalimar Satta">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Shalimar Lotto">
+<meta name="theme-color" content="#00261f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Shalimar Lotto - Live Lottery &amp; Satta Results">
+<meta property="og:description" content="Shalimar Lotto live results - Lottery every 15 minutes 9 AM-9 PM IST and Satta daily at 4 PM IST.">
+<meta property="og:image" content="logo.png">
+<meta property="og:site_name" content="Shalimar Lotto">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Shalimar Lotto - Live Lottery &amp; Satta Results">
+<meta name="twitter:description" content="Shalimar Lotto live results - Lottery every 15 minutes 9 AM-9 PM IST and Satta daily at 4 PM IST.">
+<meta name="twitter:image" content="logo.png">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+/* Shalimar Lotto v6 - selected template (client image, 2026-11-09).
+   Dark green + gold luxury template. JS / IDs / Firebase unchanged.
+   Balls, crowns and gold swirls are recreated with CSS/emoji, not copied as images. */
+:root{
+  --bg:#00261f; --bg2:#01332a; --bg3:#022e26; --card:#02332b; --card2:#012a23;
+  --gold:#f5c542; --gold2:#d4a017; --gold-light:#ffe082; --pink:#e91e63;
+  --ink:#ffffff; --ink2:#e8f5e9; --muted:#9db8a8; --line:#c9a227;
+  --red:#8e0e2e; --red2:#b3123a; --maroon:#6d0a24;
+  --shadow:0 6px 20px rgba(0,0,0,.45); --radius:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Segoe UI',Roboto,Arial,sans-serif}
+html,body{height:100%}
+body{background:radial-gradient(ellipse at top,#044d3a 0%,var(--bg) 55%,#001a15 100%);color:var(--ink);-webkit-font-smoothing:antialiased;padding-bottom:110px}
+.container{max-width:720px;margin:0 auto;padding:0 14px}
+/* Top bar */
+.topbar{max-width:720px;margin:0 auto;padding:14px 16px 4px;display:flex;align-items:center;justify-content:space-between}
+.icon-btn{background:none;border:none;color:#fff;font-size:24px;cursor:pointer;padding:6px;position:relative}
+.icon-btn .dot{position:absolute;top:2px;right:2px;width:11px;height:11px;border-radius:50%;background:#ff1744;border:2px solid var(--bg)}
+.logo-wrap{text-align:center;flex:1;margin-left:48px}
+.site-logo{max-width:340px;width:76%;height:auto;display:block;margin:0 auto;filter:drop-shadow(0 4px 10px rgba(0,0,0,.5))}
+/* IST time hero */
+.ist-hero{text-align:center;margin-top:10px;position:relative}
+.ist-pill{display:inline-block;background:var(--bg2);border:2px solid var(--gold);border-radius:999px;padding:5px 16px;font-size:15px;font-weight:600}
+.ist-clock{margin:10px auto 0;max-width:460px;background:linear-gradient(180deg,#023d31,#012a23);border:2px solid var(--gold);border-radius:999px;padding:14px 18px;box-shadow:0 0 24px rgba(245,197,66,.35),var(--shadow)}
+.ist-clock .big-time{font-size:38px;font-weight:900;letter-spacing:1px;color:#fff}
+.current-time{display:flex;justify-content:center;align-items:center;gap:8px}
+.current-time i{color:var(--gold)}
+/* Next Result In bar */
+.next-bar{margin-top:16px;background:linear-gradient(180deg,#023d31,#012a23);border:2px solid var(--gold);border-radius:var(--radius);padding:14px 16px;display:flex;align-items:center;justify-content:space-between;gap:10px;box-shadow:var(--shadow)}
+.next-bar .label{font-size:22px;font-weight:800;font-style:italic;white-space:nowrap}
+.next-bar .label i{color:var(--gold);margin-right:8px}
+.cd-boxes{display:flex;align-items:flex-start;gap:6px}
+.cd-box{text-align:center}
+.cd-num{display:block;min-width:62px;background:linear-gradient(180deg,#c2185b,#8e0e2e);border:2px solid #ff5da2;border-radius:10px;padding:8px 6px;font-size:30px;font-weight:900;color:#fff;box-shadow:0 4px 14px rgba(0,0,0,.5)}
+.cd-colon{font-size:28px;font-weight:900;color:#fff;padding-top:8px}
+.cd-lab{font-size:11px;font-weight:700;letter-spacing:1px;color:var(--ink2);margin-top:4px}
+.next-result{text-align:center;color:var(--muted);margin:10px 0 0;font-size:14px}
+.next-result strong{color:#fff}
+.countdown-inline{background:linear-gradient(90deg,#e91e63,#9c27b0,#ff7a00);color:#fff;font-weight:800;margin-left:6px;padding:3px 12px;border-radius:999px}
+/* Current Result banner */
+.current-banner{margin-top:14px;background:linear-gradient(90deg,#5c0a1e,#8e0e2e 45%,#5c0a1e);border:2px solid var(--gold);border-radius:12px;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 0 22px rgba(245,197,66,.35)}
+.current-banner .cb-label{font-size:22px;font-weight:800;font-style:italic;white-space:nowrap}
+.current-banner .cb-label i{color:var(--gold);margin-right:8px}
+.current-banner .cb-sep{width:2px;align-self:stretch;background:var(--gold);opacity:.7}
+.current-digits{display:flex;gap:10px}
+.current-digit{width:56px;height:56px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#7a0a24,#4a0616);border:2px solid #ff5da2;border-radius:10px;font-size:32px;font-weight:900;color:#fff;box-shadow:0 4px 14px rgba(0,0,0,.5)}
+/* v6.11: digits truly centred in their boxes - the old .flip .face rule (min-width:52px, left-aligned) pushed them off-centre */
+.current-digit .face{display:flex !important;align-items:center;justify-content:center;width:100%;height:100%;min-width:0 !important;line-height:1;text-align:center}
+.prev-line{text-align:center;color:var(--muted);font-size:13px;margin-top:8px}
+/* Today's History ribbon */
+.ribbon-wrap{text-align:center;margin:20px 0 12px;position:relative}
+.ribbon-wrap:before,.ribbon-wrap:after{content:"";position:absolute;top:50%;width:22%;height:2px;background:var(--gold)}
+.ribbon-wrap:before{left:0}.ribbon-wrap:after{right:0}
+.ribbon{display:inline-block;background:linear-gradient(90deg,#b8860b,#f5c542,#b8860b);color:#111;font-size:22px;font-weight:900;padding:8px 26px;border-radius:4px;clip-path:polygon(12px 0,calc(100% - 12px) 0,100% 50%,calc(100% - 12px) 100%,12px 100%,0 50%)}
+/* History list - dark green table */
+.history-box{background:linear-gradient(180deg,#023d31,#012a23);border:2px solid var(--gold);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.single-list{display:flex;flex-direction:column}
+.single-row{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid rgba(245,197,66,.25)}
+.single-row:last-child{border-bottom:none}
+.single-row:nth-child(even){background:rgba(0,0,0,.18)}
+.single-time{font-size:20px;font-weight:700;color:#fff;white-space:nowrap}
+.single-digits{font-size:30px;font-weight:900;letter-spacing:12px}
+.single-digits .d0{color:#ff5da2} .single-digits .d1{color:#7ec8ff} .single-digits .d2{color:#00e5c7} .single-digits .d3{color:var(--gold)}
+.single-empty{text-align:center;color:var(--muted);padding:26px}
+/* v6.4: Satta list rows tighter - less space between dates (Lottery list unchanged) */
+#satta-result-list .single-row{padding:6px 20px}
+/* v6.6: Satta results window is scrollable - fixed height, scroll inside the box */
+#satta-result-list{max-height:420px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:#f5c542 #012a23}
+#satta-result-list::-webkit-scrollbar{width:8px}
+#satta-result-list::-webkit-scrollbar-track{background:#012a23;border-radius:99px}
+#satta-result-list::-webkit-scrollbar-thumb{background:#f5c542;border-radius:99px}
+#satta-result-list .single-digits{font-size:26px;letter-spacing:2px}
+#satta-result-list .single-time{font-size:18px}
+.result-section{margin-top:6px;display:none;animation:fadeIn .3s ease both}
+.result-section.active{display:block}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.section-title{display:none}
+/* keep old cards for Previous / Next Draw, restyled dark */
+.result-cards{display:grid;grid-template-columns:1fr;gap:10px;margin-top:14px}
+.result-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;text-align:center;box-shadow:var(--shadow)}
+.result-card h3{color:var(--gold);margin-bottom:10px;font-size:15px}
+.session-results{display:flex;justify-content:center;gap:12px}
+.session-card{min-width:64px;padding:8px;background:rgba(0,0,0,.25);border:1px solid var(--line);border-radius:8px}
+.session-card h4{color:var(--gold);margin-bottom:6px}
+.session-number{font-size:28px;font-weight:900;width:52px;height:52px;display:flex;align-items:center;justify-content:center;border-radius:8px;background:var(--gold);color:#111;margin:0 auto}
+.flip .face{display:block;min-width:52px}
+.result-number.big{font-size:34px;font-weight:900;color:#fff;padding:10px 16px;border-radius:12px;background:linear-gradient(135deg,#e91e63,#9c27b0,#ff7a00)}
+.closed-message{text-align:center;padding:22px;border-radius:var(--radius);background:var(--card);border:1px solid var(--line)}
+.satta-result-container{display:flex;flex-direction:column;align-items:center;gap:12px}
+.today-satta-result{width:100%;padding:18px;border-radius:var(--radius);background:var(--card);border:2px solid var(--gold);text-align:center;box-shadow:var(--shadow)}
+.today-satta-result h3{font-size:17px;margin-bottom:8px;color:var(--gold)}
+.satta-number{font-size:44px;font-weight:900;letter-spacing:10px;color:var(--gold)}
+.satta-date{color:var(--muted);margin-top:6px;font-size:14px}
+.history{margin-top:18px;width:100%}
+.history h3{text-align:center;color:var(--gold);margin-bottom:12px}
+.history-table{width:100%;border-collapse:collapse;font-size:14px;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.history-table th,.history-table td{padding:11px 12px;text-align:center;border-bottom:1px solid rgba(245,197,66,.2);color:#fff}
+.history-table th{color:var(--gold);background:rgba(0,0,0,.25)}
+.empty-result{color:#ff8a80;font-style:italic}
+.history-controls{display:flex;gap:8px;justify-content:center;margin-bottom:12px;flex-wrap:wrap}
+.history-btn{padding:8px 16px;border-radius:999px;border:1px solid var(--gold);cursor:pointer;background:transparent;color:#fff;font-weight:700}
+.history-btn.active{background:var(--gold);color:#111;border-color:var(--gold)}
+.date-selector{display:flex;justify-content:center;gap:8px;align-items:center;margin:12px 0;flex-wrap:wrap;color:var(--muted)}
+select,input[type="date"]{padding:9px 12px;border-radius:999px;border:1px solid var(--gold);background:var(--card);color:#fff;font-weight:600}
+.btn-primary{padding:9px 16px;border-radius:999px;border:none;cursor:pointer;background:var(--gold);color:#111;font-weight:800}
+.chart-card{background:var(--card);border:2px solid var(--gold);border-radius:var(--radius);box-shadow:var(--shadow);padding:34px 22px;display:flex;flex-direction:column;gap:22px;margin-top:14px}
+.chart-btn{width:100%;padding:20px 16px;border:none;cursor:pointer;color:#fff;font-size:20px;font-weight:700;border-radius:2px}
+.chart-btn.blue{background:#0b4ed0}.chart-btn.purple{background:#8e24aa}.chart-btn.pink{background:#e91e63}.chart-btn.orange{background:#ff7a00}.chart-btn.yellow{background:#ffeb00;color:#111}
+.chart-note{text-align:center;color:var(--muted);font-size:14px}
+.bottom-nav{position:fixed;left:10px;right:10px;bottom:12px;z-index:50;background:linear-gradient(180deg,#023d31,#012a23);border:2px solid var(--gold);border-radius:16px;display:flex;justify-content:space-around;padding:6px;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+.nav-btn{flex:1;background:none;border:none;color:#fff;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px;font-size:16px;font-weight:800;padding:10px 6px;border-radius:12px}
+.nav-btn.active{background:linear-gradient(180deg,#f5c542,#b8860b);color:#111}
+.nav-btn i{font-size:20px}
+footer{margin-top:22px;text-align:center;padding:14px;color:var(--muted);font-size:13px}
+.connection-status{position:fixed;bottom:96px;right:10px;padding:8px 14px;border-radius:20px;font-size:12px;z-index:100;display:flex;align-items:center;gap:6px;font-weight:700;box-shadow:var(--shadow);border:1px solid var(--line);background:#fff;color:#555}
+.online{background:#dcfce7;color:#15803d}.offline{background:#fee2e2;color:#b91c1c}
+.date-warning{background:#4a0616;border:1px solid #ff5da2;border-radius:10px;padding:12px;margin:15px 0;text-align:center;color:#ffd6d6}
+@media (max-width:600px){
+  .ist-hero{display:none} /* v6.15: Indian Time pill + IST clock hidden on small screens */
+    .ist-clock .big-time{font-size:30px}
+  .next-bar .label{font-size:18px}
+  .cd-num{min-width:48px;font-size:24px}
+  .current-banner .cb-label{font-size:18px}
+  .current-digit{width:46px;height:46px;font-size:26px}
+  .single-time{font-size:17px}
+  .single-digits{font-size:24px;letter-spacing:8px}
+  .balls{display:none}
+}
+.loader{display:inline-block;width:20px;height:20px;border:3px solid #555;border-radius:50%;border-top-color:var(--gold);animation:spin 1s ease-in-out infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.toast{position:fixed;left:50%;bottom:110px;transform:translateX(-50%);background:#111;color:#fff;padding:10px 16px;border-radius:999px;font-size:14px;z-index:200;display:none}
+#app-title{display:none}
+</style>
+</head>
+<body>
+  <div class="connection-status offline" id="connection-status"><i class="fas fa-wifi"></i><span>Connecting...</span></div>
+  <div id="app-title">Single Result</div>
+  <header>
+    <div class="topbar">
+      <div class="logo-wrap">
+        <img class="site-logo" src="logo.png" alt="Shalimar Lotto">
+      </div>
+      <div style="display:flex;gap:4px">
+        <button class="icon-btn" id="refresh-btn" title="Refresh" aria-label="Refresh"><i class="fas fa-sync-alt"></i></button>
+        <button class="icon-btn" id="share-btn" title="Share" aria-label="Share"><i class="fas fa-share-alt"></i></button>
+        <button class="icon-btn" id="bell-btn" title="Notifications" aria-label="Notifications"><i class="fas fa-bell"></i><span class="dot"></span></button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="ist-hero">
+        <div class="ist-pill">🇮🇳&nbsp; Indian Time (IST)</div>
+        <div class="ist-clock">
+          <div class="current-time"><i class="fas fa-clock"></i><div><strong id="time" class="big-time">Loading...</strong></div></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <div class="date-warning" id="date-warning" style="display: none;">
+      <i class="fas fa-exclamation-triangle"></i>
+      <span id="warning-text">System date validation issue detected. Results may be inaccurate.</span>
+    </div>
+    <!-- Lottery Section -->
+    <section id="lottery" class="result-section active">
+      <div class="next-bar">
+        <div class="label"><i class="fas fa-hourglass-half"></i>Next Result In</div>
+        <div class="cd-boxes">
+          <div class="cd-box"><span class="cd-num" id="cd-m">00</span><div class="cd-lab">MINUTES</div></div>
+          <span class="cd-colon">:</span>
+          <div class="cd-box"><span class="cd-num" id="cd-s">00</span><div class="cd-lab">SECONDS</div></div>
+        </div>
+      </div>
+      <div class="next-result">Next Result: <strong id="next-lottery-time">Calculating...</strong></div>
+      <div id="lottery-closed-message" class="closed-message" style="display:none">
+        <h3><i class="fas fa-moon"></i> Lottery Closed</h3>
+        <p>Lottery results are available from <strong>9:00 AM</strong> to <strong>9:00 PM IST</strong>.</p>
+      </div>
+      <div id="lottery-results-container">
+        <div class="current-banner">
+          <div class="cb-label">🎯 Current Result</div>
+          <div class="cb-sep"></div>
+          <div class="current-digits">
+            <div class="current-digit flip" id="flip-a"><span class="face" id="current-lottery-a">-</span></div>
+            <div class="current-digit flip" id="flip-b"><span class="face" id="current-lottery-b">-</span></div>
+            <div class="current-digit flip" id="flip-c"><span class="face" id="current-lottery-c">-</span></div>
+          </div>
+        </div>
+        <div class="prev-line">Previous: <span id="previous-lottery-a">-</span> <span id="previous-lottery-b">-</span> <span id="previous-lottery-c">-</span> &bull; <span id="previous-lottery-time">-</span> &bull; Updated: <span id="lottery-update-time">-</span></div>
+        <div class="result-cards" id="lottery-live-panels" style="display:none">
+          <div class="result-card">
+            <h3>Next Draw In</h3>
+            <div class="result-number big" id="countdown">--:--</div>
+            <div class="result-time" style="margin-top:10px;color:var(--muted)">Minutes : Seconds</div>
+          </div>
+        </div>
+        <div class="ribbon-wrap"><span class="ribbon" id="history-ribbon">📅 Today's History</span></div>
+        <div class="history-box">
+          <div id="single-result-list" class="single-list"><div class="single-empty">Loading today's results...</div></div>
+        </div>
+      </div>
+    </section>
+    <!-- Satta Section -->
+    <section id="satta" class="result-section">
+      <div class="next-result">Next Result: Today at <strong>4:00 PM IST</strong></div>
+      <div class="satta-result-container">
+        <div class="today-satta-result" aria-live="polite">
+          <h3>Today's Satta Result</h3>
+          <div class="satta-number" id="today-satta-number">--</div>
+          <div class="satta-date" id="satta-date">Check after 4:00 PM</div>
+        </div>
+        <div id="satta-result-list" class="single-list history-box" style="width:100%"><div class="single-empty">Loading Satta results...</div></div>
+        <div class="date-warning" style="margin-top: 20px;">
+          <i class="fas fa-info-circle"></i>
+          <span>Satta results are announced daily at 4:00 PM IST</span>
+        </div>
+      </div>
+    </section>
+    <!-- Chart Section -->
+    <section id="chart" class="result-section">
+      <div class="ribbon-wrap"><span class="ribbon">Chart Listing</span></div>
+      <div class="chart-card">
+        <button class="chart-btn blue" data-days="1">DAILY CHART</button>
+        <button class="chart-btn purple" data-days="7">WEEKLY CHART</button>
+        <button class="chart-btn pink" data-days="30">1 MONTH CHART</button>
+        <button class="chart-btn orange" data-days="90">3 MONTH CHART</button>
+        <button class="chart-btn yellow" data-days="365">REPEAT CHART - NEW</button>
+        <div class="chart-note">Tap a chart to show those Lottery results below.</div>
+      </div>
+    </section>
+    <footer>
+      <div>© <span id="yearNow"></span> Shalimar Lotto. All rights reserved.</div>
+      <div class="disclaimer">This website is for entertainment purposes only. Please play responsibly.</div>
+      <div style="margin-top:6px">All users see the same result — results come only from Firebase, never generated on your phone.</div>
+    </footer>
+  </main>
+  <nav class="bottom-nav">
+    <button class="nav-btn active" data-tab="lottery"><i class="fas fa-check-double"></i>SINGLE</button>
+    <button class="nav-btn" data-tab="satta"><i class="fas fa-check-double"></i>SATTA</button>
+    <button class="nav-btn" data-tab="chart"><i class="fas fa-chart-bar"></i>CHART</button>
+  </nav>
+  <div class="toast" id="toast"></div>
+<script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
+import { getDatabase, ref, onValue, set, get, query, limitToLast } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-database.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCXh8qfMPANNwHtrxDMG6rNGAvh-dyZFQc",
+  authDomain: "database-lotto.firebaseapp.com",
+  databaseURL: "https://database-lotto-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "database-lotto",
+  storageBucket: "database-lotto.firebasestorage.app",
+  messagingSenderId: "349794805518",
+  appId: "1:349794805518:web:b37c6f4559ee1b29d0995f",
+  measurementId: "G-M5GE093GRF"
+};
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
+
+function nowIST() {
+  const istStr = new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata' });
+  return new Date(istStr);
+}
+function istDateKey(d) {
+  // YYYY-MM-DD in IST, not UTC - correct just after midnight IST.
+  return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata', year: 'numeric', month: '2-digit', day: '2-digit' }).format(d);
+}
+const connectionStatus = document.getElementById('connection-status');
+const SATTA_PATH = 'satta';
+const LOTTERY_PATH = 'lottery';
+
+const timeEl = document.getElementById('time');
+const yearNow = document.getElementById('yearNow'); if(yearNow) yearNow.textContent = new Date().getFullYear();
+const dateWarning = document.getElementById('date-warning');
+const warningText = document.getElementById('warning-text');
+
+const todaySattaNumEl = document.getElementById('today-satta-number');
+const sattaDateEl = document.getElementById('satta-date');
+const sattaHistoryTbody = document.getElementById('satta-history');
+
+const nextLotteryTimeEl = document.getElementById('next-lottery-time');
+const countdownEl = document.getElementById('countdown');
+
+const currentA = document.getElementById('current-lottery-a');
+const currentB = document.getElementById('current-lottery-b');
+const currentC = document.getElementById('current-lottery-c');
+const prevA = document.getElementById('previous-lottery-a');
+const prevB = document.getElementById('previous-lottery-b');
+const prevC = document.getElementById('previous-lottery-c');
+
+const lotteryUpdateTime = document.getElementById('lottery-update-time');
+const previousLotteryTime = document.getElementById('previous-lottery-time');
+const lotteryHistoryTbody = document.getElementById('lottery-history');
+
+// Global state for history filtering
+let sattaCurrentDays = 365; // v6.6: scrollable history window shows a full year
+let lotteryCurrentDays = 1;
+let sattaSpecificDate = null;
+let lotterySpecificDate = null;
+
+onValue(ref(db, '.info/connected'), (snapshot) => {
+  if(snapshot.val()) {
+    connectionStatus.className = 'connection-status online';
+    connectionStatus.innerHTML = '<i class="fas fa-wifi"></i><span>Online</span>';
+  } else {
+    connectionStatus.className = 'connection-status offline';
+    connectionStatus.innerHTML = '<i class="fas fa-wifi"></i><span>Connecting...</span>';
+  }
+});
+
+/* Tab switching */
+const APP_TITLES={lottery:'Single Result',satta:'Satta Result',chart:'Chart Listing'};
+function showTab(tab){
+  document.querySelectorAll('.nav-btn').forEach(b=>b.classList.toggle('active', b.getAttribute('data-tab')===tab));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.toggle('active', b.getAttribute('data-tab')===tab));
+  document.querySelectorAll('.result-section').forEach(sec=>sec.classList.remove('active'));
+  const el=document.getElementById(tab); if(el) el.classList.add('active');
+  const t=document.getElementById('app-title'); if(t) t.textContent=APP_TITLES[tab]||'Single Result'; // v6: app-title is a hidden subtitle, logo stays ShalimarLotto
+  window.scrollTo({top:0});
+}
+document.querySelectorAll('.tab-btn,.nav-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>showTab(btn.getAttribute('data-tab')));
+});
+function showToast(msg){ const el=document.getElementById('toast'); if(!el) return; el.textContent=msg; el.style.display='block'; setTimeout(()=>{el.style.display='none';},2500); }
+
+/* --- Date Selector Populate Functions --- */
+function populateDateSelectors(prefix) {
+  const now = nowIST();
+  const yearSelect = document.getElementById(`${prefix}-year-select`);
+  const monthSelect = document.getElementById(`${prefix}-month-select`);
+  const daySelect = document.getElementById(`${prefix}-day-select`);
+  
+  if (!yearSelect || !monthSelect || !daySelect) return;
+  
+  // Populate years (2020 to current)
+  const currentYear = now.getFullYear();
+  yearSelect.innerHTML = '';
+  for (let y = 2020; y <= currentYear; y++) {
+    const opt = document.createElement('option');
+    opt.value = y;
+    opt.textContent = y;
+    if (y === currentYear) opt.selected = true;
+    yearSelect.appendChild(opt);
+  }
+  
+  // Populate months
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  monthSelect.innerHTML = '';
+  months.forEach((m, idx) => {
+    const opt = document.createElement('option');
+    opt.value = idx + 1;
+    opt.textContent = m;
+    if (idx === now.getMonth()) opt.selected = true;
+    monthSelect.appendChild(opt);
+  });
+  
+  // Populate days
+  updateDaysForMonth(prefix);
+}
+
+function updateDaysForMonth(prefix) {
+  const yearSelect = document.getElementById(`${prefix}-year-select`);
+  const monthSelect = document.getElementById(`${prefix}-month-select`);
+  const daySelect = document.getElementById(`${prefix}-day-select`);
+  if (!yearSelect || !monthSelect || !daySelect) return;
+  
+  const year = parseInt(yearSelect.value);
+  const month = parseInt(monthSelect.value);
+  const daysInMonth = new Date(year, month, 0).getDate();
+  
+  daySelect.innerHTML = '';
+  for (let d = 1; d <= daysInMonth; d++) {
+    const opt = document.createElement('option');
+    opt.value = d;
+    opt.textContent = d;
+    const now = nowIST();
+    if (d === now.getDate() && year === now.getFullYear() && month === now.getMonth() + 1) {
+      opt.selected = true;
+    }
+    daySelect.appendChild(opt);
+  }
+}
+
+// Attach month/year change events for both selectors
+document.getElementById('satta-year-select')?.addEventListener('change', () => updateDaysForMonth('satta'));
+document.getElementById('satta-month-select')?.addEventListener('change', () => updateDaysForMonth('satta'));
+document.getElementById('lottery-year-select')?.addEventListener('change', () => updateDaysForMonth('lottery'));
+document.getElementById('lottery-month-select')?.addEventListener('change', () => updateDaysForMonth('lottery'));
+
+/* Satta display */
+function updateSattaDisplay(now){
+  const todayKey = istDateKey(now);
+  get(ref(db, `${SATTA_PATH}/${todayKey}`)).then(snapshot => {
+    if (snapshot.exists()) {
+      const result = snapshot.val();
+      const resultValue = typeof result === 'object' ? result.result || result.value || result.number : result;
+      if(todaySattaNumEl) todaySattaNumEl.textContent = resultValue;
+      if(sattaDateEl) sattaDateEl.textContent = now.toLocaleDateString('en-IN', { year:'numeric', month:'long', day:'numeric' });
+    } else {
+      if(todaySattaNumEl) todaySattaNumEl.textContent = 'XX';
+      if(sattaDateEl) sattaDateEl.textContent = 'Check after 4:00 PM';
+    }
+  });
+}
+
+function generateSattaHistory(days=365, specificDate=null){
+  if(sattaHistoryTbody) {
+    sattaHistoryTbody.innerHTML = '<tr><td colspan="3"><div style="text-align:center;padding:20px"><span class="loader"></span> Loading...</div></td></tr>';
+  }
+  
+  const histPromise = specificDate
+    ? get(ref(db, `${SATTA_PATH}/${istDateKey(specificDate)}`)).then(s => ({ [istDateKey(specificDate)]: s.val() }))
+    : get(query(ref(db, SATTA_PATH), limitToLast(days || 7))).then(s => s.val() || {});
+  histPromise.then(storeRaw => {
+    const store = storeRaw || {};
+    if(sattaHistoryTbody) sattaHistoryTbody.innerHTML = '';
+    let keys = Object.keys(store).filter(k => store[k] != null).sort((a,b)=> b.localeCompare(a));
+    
+    if(keys.length===0){
+      if(sattaHistoryTbody) sattaHistoryTbody.innerHTML = `<tr><td colspan="3" class="empty-result">No satta results available</td></tr>`;
+      return;
+    }
+    if(sattaHistoryTbody){ // v6.5: Satta Previous Results table removed - list below renders via renderSattaList
+      keys.forEach(k=>{
+        const dt = new Date(k + 'T00:00:00');
+        const dateStr = dt.toLocaleDateString('en-IN', { day:'numeric', month:'short', year:'numeric' });
+        const dow = dt.toLocaleDateString('en-IN', { weekday:'short' });
+        const resultData = store[k];
+        const resultValue = typeof resultData === 'object' ?
+          resultData.result || resultData.value || resultData.number : resultData;
+        const row = document.createElement('tr');
+        row.innerHTML = `<td>${dateStr}</td><td><strong>${resultValue}</strong></td><td>${dow}</td>`;
+        sattaHistoryTbody.appendChild(row);
+      });
+    }
+    renderSattaList(keys, store);
+  }).catch(err => {
+    if(sattaHistoryTbody) sattaHistoryTbody.innerHTML = `<tr><td colspan="3" class="empty-result">Error loading history: ${err.message}</td></tr>`;
+  });
+}
+
+function isWithinLotteryHours(now){
+  const h = now.getHours();
+  const m = now.getMinutes();
+  if (h === 21 && m < 14) return true;
+  return (h >= 9 && h < 21);
+}
+
+function nextDrawIST(now){
+  const n = new Date(now);
+  if (now.getHours() > 21 || (now.getHours() === 21 && now.getMinutes() >= 14)) {
+    const nxt = new Date(now);
+    nxt.setDate(nxt.getDate() + 1);
+    nxt.setHours(9, 0, 0, 0);
+    return nxt;
+  }
+  if(!isWithinLotteryHours(now)){
+    const nxt = new Date(now);
+    if (now.getHours() < 9) { nxt.setHours(9,0,0,0); } // v2 fix: before 9 AM = today 9 AM
+    else { nxt.setDate(now.getDate() + 1); nxt.setHours(9,0,0,0); }
+    return nxt;
+  }
+  const m = now.getMinutes();
+  const nextSlotMin = Math.ceil((m+0.0001) / 15) * 15;
+  if(nextSlotMin === 60){
+    const nxt = new Date(now);
+    nxt.setHours(now.getHours()+1, 0, 0, 0);
+    return nxt;
+  } else {
+    const nxt = new Date(now);
+    nxt.setMinutes(nextSlotMin, 0, 0);
+    return nxt;
+  }
+}
+
+function flipDigit(containerId, newVal){
+  const container = document.getElementById(containerId);
+  if(!container) return;
+  const face = container.querySelector('.face') || container;
+  face.style.transform = 'rotateX(-90deg)';
+  setTimeout(()=> {
+    face.textContent = newVal;
+    face.style.transform = 'rotateX(0deg)';
+  }, 220);
+}
+
+function isResultInLotteryHours(entryDate) {
+  const h = entryDate.getHours();
+  const m = entryDate.getMinutes();
+  if (h === 21 && m < 14) return true;
+  return h >= 9 && h < 21;
+}
+
+
+const DIGIT_COLORS=['d0','d1','d2','d3'];
+function colouredDigits(str){
+  return String(str).split('').map((ch,i)=>`<span class="${DIGIT_COLORS[i % 4]}">${ch}</span>`).join('');
+}
+function renderSingleList(entries){
+  const list=document.getElementById('single-result-list'); if(!list) return;
+  if(!entries || entries.length===0){ list.innerHTML='<div class="single-empty">No results for this period</div>'; return; }
+  list.innerHTML='';
+  const todayKey=new Date().toLocaleDateString('en-CA',{timeZone:'Asia/Kolkata'});
+  entries.forEach((entry,idx)=>{
+    const dt=new Date(entry.dateISO);
+    const tStr=dt.toLocaleTimeString('en-IN',{timeZone:'Asia/Kolkata',hour:'2-digit',minute:'2-digit',hour12:true}).toLowerCase();
+    const dKey=dt.toLocaleDateString('en-CA',{timeZone:'Asia/Kolkata'});
+    const dStr=dt.toLocaleDateString('en-IN',{timeZone:'Asia/Kolkata',day:'numeric',month:'short'});
+    const label = dKey===todayKey ? tStr : dStr+', '+tStr;
+    const digits=String(entry.A)+String(entry.B)+String(entry.C);
+    const row=document.createElement('div'); row.className='single-row';
+    // colour by position in the list, like the reference: latest pink, next navy, next teal, rest gold
+    const cls = idx===0?'d0':idx===1?'d1':idx===2?'d2':'d3';
+    row.innerHTML=`<span class="single-time">🕐 ${label}</span><span class="single-digits"><span class="${cls}">${digits.split('').join(' ')}</span></span>`;
+    list.appendChild(row);
+  });
+}
+function renderSattaList(keys, store){
+  const list=document.getElementById('satta-result-list'); if(!list) return;
+  if(!keys || keys.length===0){ list.innerHTML='<div class="single-empty">No Satta results yet</div>'; return; }
+  list.innerHTML='';
+  keys.forEach((k,idx)=>{ // v6.6: all history rows, the box scrolls
+    const dt=new Date(k+'T00:00:00');
+    const dateStr=dt.toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'});
+    const resultData=store[k];
+    const resultValue=typeof resultData==='object'? (resultData.result||resultData.value||resultData.number) : resultData;
+    const cls = idx===0?'d0':idx===1?'d1':idx===2?'d2':'d3';
+    const row=document.createElement('div'); row.className='single-row';
+    row.innerHTML=`<span class="single-time">${dateStr}</span><span class="single-digits"><span class="${cls}">${String(resultValue).split('').join('')}</span></span>`; // v6.7: Satta shows 48, not 4 8
+    list.appendChild(row);
+  });
+}
+function generateLotteryHistory(days=1, specificDate=null){
+  if(lotteryHistoryTbody) {
+    lotteryHistoryTbody.innerHTML = '<tr><td colspan="6"><div style="text-align:center;padding:20px"><span class="loader"></span> Loading...</div></td></tr>';
+  }
+  
+  // v2: history is loaded ONCE on demand, capped - never every second.
+  const cap = specificDate ? 20000 : Math.min(20000, Math.max(60, (days || 1) * 55)); // v6.5: full year needs ~17,900 slots, old cap 2000 only gave ~40 days
+  get(query(ref(db, LOTTERY_PATH), limitToLast(cap))).then(snapshot => {
+    const allEntries = [];
+    if(snapshot.exists()) {
+      Object.values(snapshot.val()).forEach(entry => allEntries.push(entry));
+    }
+    const now = nowIST();
+    let filtered = [];
+    if(specificDate){
+      const key = specificDate.toISOString().slice(0,10);
+      filtered = allEntries.filter(e => {
+        const entryDate = new Date(e.dateISO);
+        return e.dateISO.slice(0,10) === key && isResultInLotteryHours(entryDate);
+      });
+    } else {
+      const start = new Date(now); 
+      start.setDate(now.getDate() - (days-1));
+      start.setHours(0,0,0,0);
+      filtered = allEntries.filter(e => {
+        const entryDate = new Date(e.dateISO);
+        return entryDate >= start && isResultInLotteryHours(entryDate);
+      });
+    }
+    filtered.sort((a, b) => new Date(b.dateISO) - new Date(a.dateISO));
+    renderSingleList(filtered);
+    if(!lotteryHistoryTbody) return; // v6.3: Lottery History table removed
+    lotteryHistoryTbody.innerHTML = '';
+    if(filtered.length === 0){
+      lotteryHistoryTbody.innerHTML = `<tr><td colspan="6" class="empty-result">No lottery results available for this period</td></tr>`;
+      return;
+    }
+    filtered.forEach(entry => {
+      const dt = new Date(entry.dateISO);
+      const istStr = dt.toLocaleString('en-US', { timeZone: 'Asia/Kolkata' });
+      const istDate = new Date(istStr);
+      const dStr = istDate.toLocaleDateString('en-IN', { day:'numeric', month:'short', year:'numeric' });
+      const tStr = istDate.toLocaleTimeString('en-IN', { hour:'2-digit', minute:'2-digit', hour12:true });
+      const tr = document.createElement('tr');
+      tr.innerHTML = `<td>${dStr}</td><td>${tStr}</td><td><strong>${entry.A}</strong></td><td><strong>${entry.B}</strong></td><td><strong>${entry.C}</strong></td><td>${entry.slot || '-'}</td>`;
+      lotteryHistoryTbody.appendChild(tr);
+    });
+  }).catch(err => {
+    if(lotteryHistoryTbody) lotteryHistoryTbody.innerHTML = `<tr><td colspan="6" class="empty-result">Error loading history: ${err.message}</td></tr>`;
+  });
+}
+
+function refreshCurrentFromHistory(){
+  const now = nowIST();
+  if (!isWithinLotteryHours(now)) {
+    currentA.textContent = "Closed";
+    currentB.textContent = "Closed";
+    currentC.textContent = "Closed";
+    lotteryUpdateTime.textContent = "Next draws: 9:00 AM to 9:00 PM IST";
+    prevA.textContent = "Closed";
+    prevB.textContent = "Closed";
+    prevC.textContent = "Closed";
+    previousLotteryTime.textContent = "Next draws: 9:00 AM to 9:00 PM IST";
+    return;
+  }
+  get(query(ref(db, LOTTERY_PATH), limitToLast(2))).then(snapshot => {
+    const entries = [];
+    if(snapshot.exists()) {
+      Object.values(snapshot.val()).forEach(entry => entries.push(entry));
+    }
+    if(entries.length === 0) return;
+    entries.sort((a, b) => new Date(b.dateISO) - new Date(a.dateISO));
+    const last = entries[0];
+    const prev = entries.length > 1 ? entries[1] : null;
+    const lastDrawTime = new Date(last.dateISO);
+    const timeDiff = (now - lastDrawTime) / (1000 * 60);
+    if (timeDiff < 30) {
+      flipDigit('flip-a', last.A);
+      flipDigit('flip-b', last.B);
+      flipDigit('flip-c', last.C);
+      currentA.textContent = last.A; 
+      currentB.textContent = last.B; 
+      currentC.textContent = last.C;
+      lotteryUpdateTime.textContent = new Date(last.dateISO).toLocaleTimeString('en-IN', { hour:'2-digit', minute:'2-digit', hour12:true });
+    }
+    if(prev){
+      prevA.textContent = prev.A; 
+      prevB.textContent = prev.B; 
+      prevC.textContent = prev.C;
+      previousLotteryTime.textContent = `Updated: ${new Date(prev.dateISO).toLocaleTimeString('en-IN', { hour:'2-digit', minute:'2-digit', hour12:true })}`;
+    }
+  });
+}
+
+function updateCountdownAndNextTime(){
+  const now = nowIST();
+  const nxt = nextDrawIST(now);
+  nextLotteryTimeEl.textContent = nxt.toLocaleTimeString('en-IN', { hour:'2-digit', minute:'2-digit', hour12:true });
+  let diff = Math.max(0, Math.floor((nxt - now)/1000));
+  const mm = String(Math.floor(diff/60)).padStart(2,'0');
+  const ss = String(diff % 60).padStart(2,'0');
+  if(countdownEl) countdownEl.textContent = `${mm}:${ss}`;
+  const ci=document.getElementById('countdown-inline'); if(ci) ci.textContent=`${mm}:${ss}`;
+  const hh=String(Math.floor(diff/3600)).padStart(2,'0');
+  const hEl=document.getElementById('cd-h'); if(hEl) hEl.textContent=hh;
+  const mEl=document.getElementById('cd-m'); if(mEl) mEl.textContent=mm;
+  const sEl=document.getElementById('cd-s'); if(sEl) sEl.textContent=ss;
+  const livePanels = document.getElementById('lottery-live-panels');
+  const closed = document.getElementById('lottery-closed-message');
+  if (isWithinLotteryHours(now)) {
+    if(livePanels) livePanels.style.display = 'none'; // v6: Next Result In bar is the timer now
+    closed.style.display='none';
+  } else {
+    if(livePanels) livePanels.style.display='none';
+    closed.style.display='block';
+  }
+}
+
+// --- AUTO-GENERATION MOVED TO THE TRIGGER (v2) ---
+// v2: the browser NO LONGER generates results. That caused a write-race
+// (many visitors generating the same slot) and extra Firebase writes.
+// Results are now generated by the GitHub Actions trigger:
+// .github/workflows/auto-results.yml + scripts/auto-results.mjs
+// It runs every 15 min and at 4 PM IST, writes to the SAME database
+// (database-lotto, same satta/ and lottery/ paths), only if missing.
+// If the trigger is OFF (workflow disabled), no auto results appear -
+// use the admin panel to enter results manually.
+// No code change is needed here to turn it on/off - see HOSTING-AND-AUTO-SETUP.md.
+
+// --- Setup History Button Event Listeners ---
+function setupHistoryButtons(prefix, callback) {
+  const controls = document.getElementById(`${prefix}-history-controls`);
+  if (!controls) return;
+  
+  controls.querySelectorAll('.history-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      controls.querySelectorAll('.history-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      
+      const days = parseInt(this.getAttribute('data-days'));
+      if (prefix === 'satta') {
+        sattaCurrentDays = days;
+        sattaSpecificDate = null;
+        callback(days, null);
+      } else {
+        lotteryCurrentDays = days;
+        lotterySpecificDate = null;
+        callback(days, null);
+      }
+    });
+  });
+}
+
+// --- Setup Date Search Button ---
+function setupDateSearch(prefix, callback) {
+  const searchBtn = document.getElementById(`${prefix}-date-search-btn`);
+  if (!searchBtn) return;
+  
+  searchBtn.addEventListener('click', function() {
+    const year = parseInt(document.getElementById(`${prefix}-year-select`).value);
+    const month = parseInt(document.getElementById(`${prefix}-month-select`).value);
+    const day = parseInt(document.getElementById(`${prefix}-day-select`).value);
+    
+    const dateObj = new Date(year, month - 1, day);
+    // Reset active state on history buttons
+    const controls = document.getElementById(`${prefix}-history-controls`);
+    if (controls) {
+      controls.querySelectorAll('.history-btn').forEach(b => b.classList.remove('active'));
+    }
+    
+    if (prefix === 'satta') {
+      sattaSpecificDate = dateObj;
+      callback(0, dateObj);
+    } else {
+      lotterySpecificDate = dateObj;
+      callback(0, dateObj);
+    }
+  });
+}
+
+function tickAll(){
+  // v2: 1-second tick is LOCAL ONLY (clock + countdown) - no Firebase call.
+  const now = nowIST();
+  if(timeEl) timeEl.textContent = now.toLocaleTimeString('en-IN', { hour:'2-digit', minute:'2-digit', second:'2-digit', hour12:true });
+  updateCountdownAndNextTime();
+}
+function refreshLive(){
+  // v2: live data refreshes every 30 seconds, with capped reads only.
+  const now = nowIST();
+  updateSattaDisplay(now);
+  refreshCurrentFromHistory();
+}
+
+function init(){
+  // Populate date selectors
+  populateDateSelectors('satta');
+  populateDateSelectors('lottery');
+  
+  // Setup history buttons
+  setupHistoryButtons('satta', generateSattaHistory);
+  setupHistoryButtons('lottery', generateLotteryHistory);
+  
+  // Setup date search
+  setupDateSearch('satta', generateSattaHistory);
+  setupDateSearch('lottery', generateLotteryHistory);
+  
+  // Header icons (Single Result app)
+  document.getElementById('refresh-btn')?.addEventListener('click',()=>{ refreshLive(); generateLotteryHistory(lotteryCurrentDays); generateSattaHistory(sattaCurrentDays); showToast('Refreshed'); });
+  document.getElementById('share-btn')?.addEventListener('click',async()=>{
+    const url=location.href;
+    if(navigator.share){ try{ await navigator.share({title:'Shalimar Lotto',text:'Shalimar Lotto Results',url}); }catch(e){} }
+    else if(navigator.clipboard){ await navigator.clipboard.writeText(url); showToast('Link copied'); }
+  });
+  document.getElementById('bell-btn')?.addEventListener('click',()=>showToast('Results update automatically every 30 seconds'));
+  document.getElementById('menu-btn')?.addEventListener('click',()=>showTab('chart'));
+  // Chart Listing buttons: Daily=Today, Weekly=7, 1 Month=30, 3 Month=90, Repeat=Full history
+  document.querySelectorAll('.chart-btn').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const days=parseInt(btn.getAttribute('data-days'))||1;
+      lotteryCurrentDays=days; lotterySpecificDate=null;
+      const rb=document.getElementById('history-ribbon'); if(rb) rb.textContent='📅 '+btn.textContent.trim().replace(/ CHART.*$/i,' Chart').replace(/^Daily/i,'Daily').replace(/^Weekly/i,'Weekly');
+      document.querySelectorAll('#lottery-history-controls .history-btn').forEach(b=>b.classList.toggle('active', parseInt(b.getAttribute('data-days'))===days));
+      generateLotteryHistory(days, null);
+      showTab('lottery');
+      showToast(btn.textContent.trim()+' loaded');
+    });
+  });
+  // Initial loads
+  generateLotteryHistory(1);
+  generateSattaHistory(365);
+  refreshLive();
+  tickAll();
+
+  setInterval(tickAll, 1000);
+  setInterval(refreshLive, 30000);
+}
+
+window.addEventListener('DOMContentLoaded', init);
+
+</script>
+</body>
+</html>
